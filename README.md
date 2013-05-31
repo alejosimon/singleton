@@ -40,10 +40,7 @@ class Model implements Pattern\ISigleton
 	.....
 }
 
-$model = new ProductModel( $database, $config ) ; // ERROR!!!
-
-// Transparent parse arguments to constructor.
-$model = ProductModel::GetInstance( $database, $config ) ; // OK!
+$model = ProductModel::getInstance( $database, $config ) ;
 </pre>
 ------------
 Contributing

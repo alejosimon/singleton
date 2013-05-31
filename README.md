@@ -20,8 +20,31 @@ Use a simple #include or any autoload methods.
 Documentation
 -------------
 
-TODO...
+Example to use:
+<pre>
+class Model implements ISigleton
+{
+	use TSingleton ;
 
+	protected $database ;
+	protected $config ;
+
+	protected fuction __construct( $database, $config )
+	{
+		$this->database = $database ;
+		$this->config   = $config ;
+	}
+
+	public fuction getProductsSortedByPrice() {}
+	public fuction getProductsSortedByName() {}
+	.....
+}
+
+$model = new ProductModel( $database, $config ) ; // ERROR!!!
+
+// Transparent parse arguments to constructor.
+$model = ProductModel::GetInstance( $database, $config ) ; // OK!
+</pre>
 ------------
 Contributing
 ------------

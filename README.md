@@ -1,8 +1,8 @@
 What is "PHP Abstract Singleton" pattern?
 -------------------------------
 
-PHP Abstract Singleton is an implementation of the patron "singleton" to turn any class as
-a singleton, so as the delegate constructor parameters is transparently.
+Is an abstract implementation of the pattern "singleton" to turn
+any class to as "singleton", so as the delegate constructor parameters are transparently.
 
 ------------
 Requirements

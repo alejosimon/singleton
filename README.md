@@ -22,9 +22,9 @@ Documentation
 
 Example to use:
 <pre>
-class Model implements ISigleton
+class Model implements Pattern\ISigleton
 {
-	use TSingleton ;
+	use Pattern\TSingleton ;
 
 	protected $database ;
 	protected $config ;

@@ -14,7 +14,7 @@ Only supported on PHP 5.4 and up.
 Installation
 ------------
 
-Use a simple #include or any autoload methods.
+Use a simple #require or any autoload methods.
 
 -------------
 Documentation
